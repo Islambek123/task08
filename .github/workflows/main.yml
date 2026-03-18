@@ -1,0 +1,7 @@
+name: Task08 action
+on: [push]
+jobs:
+  Task08:
+    runs-on: ubuntu-latest
+    steps: 
+    - run: 
