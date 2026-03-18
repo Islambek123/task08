@@ -4,4 +4,9 @@ jobs:
   Task08:
     runs-on: ubuntu-latest
     steps: 
-    - run: 
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+    with:
+      distribution: 'temurin'
+      java-version: '25'
+    - run: mvn clean install
