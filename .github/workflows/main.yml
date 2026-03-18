@@ -9,4 +9,4 @@ jobs:
     with:
       distribution: 'temurin'
       java-version: '25'
-    - run: mvn clean install
+    - run: cd GitAction && mvn clean install
