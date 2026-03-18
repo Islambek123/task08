@@ -19,7 +19,7 @@ jobs:
         cache: maven
     
     - name: Download dependencies
-      run: mvn dependency:resolve
+      run: mvn -f GitAction/pom.xml dependency:resolve
     
     - name: Create build
-      run: mvn clean package
+      run: mvn -f GitAction/pom.xml clean package
