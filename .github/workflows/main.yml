@@ -25,4 +25,4 @@ jobs:
       run: mvn -f GitAction/pom.xml clean package
 
     - name: Run tests
-      run: mvn GitAction/pom.xml test
+      run: mvn -f GitAction/pom.xml test
