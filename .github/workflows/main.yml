@@ -23,3 +23,6 @@ jobs:
     
     - name: Create build
       run: mvn -f GitAction/pom.xml clean package
+
+    - name: Run tests
+      run: mvn GitAction/pom.xml test
